@@ -1,0 +1,106 @@
+/* Spinner styling */
+.spinner {
+  border: 4px solid #f3f3f3; /* Light gray background */
+  border-top: 4px solid #007bff; /* Blue spinner */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-top: 20px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Set the dark theme and font */
+body {
+  font-family: "Satoshi", sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Flexbox container for recommendations */
+.recommendations-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.recommendation-item {
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+.recommendation-item h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Styling for markdown-formatted text */
+.recommendation-item h3 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.recommendation-item h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.recommendation-item ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.recommendation-item li {
+  color: #72b8e8; /* Sky Blue for recommendations text */
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.recommendation-item p {
+  color: #e0e0e0; /* White text for general paragraphs */
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+/* Style for the button */
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
